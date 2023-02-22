@@ -7,7 +7,7 @@ import requests
 import urllib.parse
 import urllib3
 
-projectList = ["AutoAftermarket/infrastructure/git-stats"]
+projectList = ["xxxx/git-stats"]
 
 params= {
     "token":"",
@@ -34,7 +34,7 @@ def main(argv):
     urllib3.disable_warnings()
 
     errorFile = open('./errors.txt','w',encoding='utf-8')
-    gitlabApi = "https://gitlab2.bitautotech.com/api/v4"
+    gitlabApi = "https://gitlab.xxxxx.com/api/v4"
     for p in projectList:
         projectNameByEncode = urllib.parse.quote(p, safe="")
         print(projectNameByEncode)
